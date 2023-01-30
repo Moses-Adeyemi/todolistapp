@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/todo.css">
+
+    <title>Todo</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <h2> To-Do List App</h2>
+            <hr>
+            <input type="text" name="title" id="title" placeholder="Title">
+            <textarea name="description" id="description" placeholder="Description" cols="30" rows="10"></textarea>
+            <input type="date" name="date" id="date">
+            <button onclick="addTodo()">Add Todo</button>
+
+        </div>
+
+
+        <div class="right">
+            <h2>My Pending Tasks</h2>
+            <hr>
+            <div id="todo_display">
+                <center>Nothing to display at the moment</center>
+                <!-- <div class="todo">
+                    <div class="todo_title">Title</div>
+                    <div class="todo_date">2022-03-23</div>
+                    <p>This is some description</p>
+                </div>
+                <div class="todo">
+                    <div class="todo_title">Title</div>
+                    <div class="todo_date">2022-03-23</div>
+                    <p>This is some description</p>
+                </div>
+                <div class="todo">
+                    <div class="todo_title">Title</div>
+                    <div class="todo_date">2022-03-23</div>
+                    <p>This is some description</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/todo.js"></script>
+
+</body>
+</html>

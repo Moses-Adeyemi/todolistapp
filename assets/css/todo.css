@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-position: center;
+}
+
+.container{
+    height: 100%;
+    width: 90%;
+    padding: 30px;
+    margin-left: 60px;
+}
+
+.container .left, .container .right{
+    height: 100%;
+    width: 47%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: rgba(128, 79, 6, 0.9);
+    padding: 20px;
+    
+}
+
+.container .right{
+    float: right;
+}
+
+input, button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    margin: 10px 0px;
+    border: 1px solid grey;
+}
+
+button{
+    margin-top: 40px;
+    background-color: lemonchiffon;
+    color: cornflowerblue;
+}
+
+#todo_display{
+    width: 100%;
+}
+
+.todo{
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.todo_date{
+    width: 80px !important;
+    display: inline-block;
+    float: right;
+}
+
+.todo_title{
+    display: inline-block;
+}
+
+@media screen and (max-width: 730px){
+    .container{
+        min-height: auto;
+    }
+    
+    .container .left, .container .right{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+
+    .container .right{
+        float: left;
+    }
+    
+}
